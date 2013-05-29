@@ -5,9 +5,10 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :development, :test do
+group :development do
   gem 'mysql2'
   gem 'rspec-rails', '2.9.0'
+  gem 'guard-rspec'
 end
 
 
@@ -26,7 +27,10 @@ end
 gem 'jquery-rails'
 
 group :test do
+  gem 'rspec-rails', '2.9.0'
   gem 'capybara', '1.1.2'
+  gem 'rb-inotify'
+  gem 'libnotify'
 end
 
 group :production do
